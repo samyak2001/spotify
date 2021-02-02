@@ -82,7 +82,7 @@ def predict():
                                    hist_user_behavior_reason_start_trackerror,hist_user_behavior_reason_end_backbtn,hist_user_behavior_reason_end_clickrow,hist_user_behavior_reason_end_endplay,
                                    hist_user_behavior_reason_end_fedbtn,hist_user_behavior_reason_end_logout,hist_user_behavior_reason_end_remote,hist_user_behavior_reason_end_trackdone,
                                    duration,us_popularity_estimate,acousticness,beat_strength,bounciness,danceability,dyn_range_mean,energy,instrumentalness,flatness,liveness,loudness,mechanism,is_major,organism,speechiness,tempo,valence,acoustic_vector_0,acoustic_vector_1,acoustic_vector_2,acoustic_vector_3,acoustic_vector_4,acoustic_vector_5, acoustic_vector_6,acoustic_vector_7]]) 
-        p=round(prediction[0],0)
+        p=round(prediction)
          
         if p==0:
             return render_template('index.html',prediction_texts="Based on the given inputs, the song should not be skipped")
